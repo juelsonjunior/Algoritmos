@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Podevotar(anoActual, anoNasc){
+            const idade = anoActual - anoNasc;
+
+            if(idade >= 18){
+                console.log(`Você tem ${idade} e já podes votar`);
+            }else{
+                console.log(`Você tem ${idade} e não podes votar`);
+            }
+        }
+
+        var anoActual = 2024;
+        var anoNasc = 2010;
+
+        Podevotar(anoActual, anoNasc);
+    </script>
+</body>
+</html>

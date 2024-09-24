@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function calcularIdadeEmDias(anos, meses, dias){
+            const idadeEmDias = anos * 365 + meses * 30 + dias;
+
+            return idadeEmDias;
+        }
+
+        function calcularIdadeEmAnos(anos){
+            const idadeEmAnos = 2024 - anos;
+
+            return idadeEmAnos;
+        }
+
+        function calcularIdadeEmMeses(anos,meses){
+            const idadeEmMeses = (anos * 12) + 4 - meses;
+
+            return idadeEmMeses;
+        }
+
+        var anos  = 24;
+        var meses = 8;
+        var dias = 10;
+
+        const idadeEmDias = calcularIdadeEmDias(anos, meses, dias);
+        const idadeEmAnos = calcularIdadeEmAnos(anos);
+        const idadeEmMeses = calcularIdadeEmMeses(anos,meses);
+
+        console.log(`A idade em dias é: ${idadeEmDias}`);
+        console.log(`A idade em anos é: ${idadeEmAnos}`);
+        console.log(`idade em mese é: ${idadeEmMeses}`)
+
+    </script>
+</body>
+</html>

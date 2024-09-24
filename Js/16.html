@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularDuracaoJogo(horaInicio, horaFim) {
+        // Validação de entrada (opcional)
+        if (horaInicio < 0 || horaInicio > 23 || horaFim < 0 || horaFim > 23) {
+            throw new Error("As horas devem estar entre 0 e 23.");
+        }
+
+        let diferencaHoras;
+        // Caso 1: Hora de fim maior no mesmo dia
+        if (horaFim > horaInicio) {
+            diferencaHoras = horaFim - horaInicio;
+        // Caso 2: Hora de fim menor no dia seguinte
+        } else {
+            diferencaHoras = 24 + horaFim - horaInicio;
+        }
+
+        // Considera duração máxima
+        if (diferencaHoras > 24) {
+            console.warn("O jogo excedeu o tempo máximo de 24 horas. Ajuste a duração manualmente.");
+        }
+
+        return diferencaHoras;
+        }
+
+        // Exemplo de uso
+        const horaInicio = 13;
+        const horaFim = 10; // No dia seguinte
+
+        try {
+        const duracaoJogo = calcularDuracaoJogo(horaInicio, horaFim);
+        console.log("O jogo durou", duracaoJogo, "horas.");
+        } catch (error) {
+        console.error(error.message);
+        }
+    </script>
+</body>
+</html>

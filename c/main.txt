@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+
+    return 0;
+}
+
+
+
+
+
+
+#include <stdio.h>
+
+int maiorMenor(int valor1, int valor2, int valor3, int *menorValor) {
+  int maiorValor = valor1;
+
+  if (valor2 > maiorValor) {
+    maiorValor = valor2;
+  }
+
+  if (valor3 > maiorValor) {
+    maiorValor = valor3;
+  }
+
+  *menorValor = valor1;
+  if (valor2 < *menorValor) {
+    *menorValor = valor2;
+  }
+  if (valor3 < *menorValor) {
+    *menorValor = valor3;
+  }
+
+  return maiorValor;
+}
+
+int main() {
+  int valor1, valor2, valor3, maiorNumero, menorNumero;
+
+  printf("Digite o primeiro valor: ");
+  scanf("%d", &valor1);
+
+  printf("Digite o segundo valor: ");
+  scanf("%d", &valor2);
+
+  printf("Digite o terceiro valor: ");
+  scanf("%d", &valor3);
+
+  maiorNumero = maiorMenor(valor1, valor2, valor3, &menorNumero);
+
+  printf("O maior valor entre %d, %d e %d é %d!\n", valor1, valor2, valor3, maiorNumero);
+  printf("O menor valor entre %d, %d e %d é %d!\n", valor1, valor2, valor3, menorNumero);
+
+  return 0;
+}

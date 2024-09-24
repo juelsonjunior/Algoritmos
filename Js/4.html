@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function totalEleitores(eleitores, votosBrancos, votosNulos, votosValidos){
+
+            const percentual_brancos = (votosBrancos / eleitores) * 100;
+
+            const percentual_nulos = (votosNulos / eleitores) * 100;
+
+            const percentual_validos = (votosValidos / eleitores) * 100;
+
+            console.log(`Percentual votos brancos ${percentual_brancos}%`);
+            
+            console.log(`Percentual votos nulos ${percentual_nulos}%`);
+
+            console.log(`Percentual votos validos ${percentual_validos}%`)
+
+
+        }
+
+        var eleitores = 1000;
+        var votosBrancos = 50;
+        var votosNulos = 20;
+        var votosValidos = 930;
+
+        console.log(totalEleitores(eleitores, votosBrancos, votosNulos, votosValidos))
+
+    </script>
+</body>
+</html>

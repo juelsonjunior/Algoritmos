@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularAreaRetangulo(base, altura){
+            const area = base * altura;
+
+            return area;
+        }
+
+        function calacularPerimetroRetangulo(base, altura){
+            const perimetro = 2 * base + 2 * altura;
+            
+            return perimetro;
+        }
+
+        var base = 10;
+        var altura = 5;
+        
+        var mostrarAreaRetang = calcularAreaRetangulo(base,altura);
+
+        var mostrarPerimetroRetang = calacularPerimetroRetangulo(base, altura);
+
+        console.log(`A area de um retangulo é: ${mostrarAreaRetang}`);
+        console.log(`Perimetro do retangulo é: ${mostrarPerimetroRetang}`)
+    </script>
+</body>
+</html>

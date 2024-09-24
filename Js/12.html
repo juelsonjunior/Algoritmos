@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularMedia(nota1, nota2){
+            const mediaNotas = (nota1 + nota2) / 2;
+
+            if(mediaNotas > 6){
+                console.log(`O aluno foi aprovado com a media de ${mediaNotas}`);
+            }else{
+                console.log(`O aluno esta reprovado com a media de ${mediaNotas}`);
+            }
+        }
+
+        var nota1 = 5;
+        var nota2 = 5;
+        calcularMedia(nota1, nota2);
+    </script>
+</body>
+</html>

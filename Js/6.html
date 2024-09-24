@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function custoDeUmCarro(custoFabrica, percentualDistrib, impostos){
+            const valorDistribuidor = custoFabrica * 0.28;
+            const valorImposto = custoFabrica * 0.45;
+
+            const custoFinal = custoFabrica + valorDistribuidor + valorImposto;
+
+            return custoFinal;
+        }
+
+        var custoFabrica = 100000.00;
+
+        custoFinal = custoDeUmCarro(custoFabrica);
+
+        console.log(`O custo final do carro é: ${custoFinal.toFixed(2)}`);
+    </script>
+</body>
+</html>

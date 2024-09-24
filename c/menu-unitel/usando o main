@@ -1,0 +1,246 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void subUnitelMoney(int outroMenu){
+    int submenu1;
+    switch (outroMenu)
+    {
+    case 1:
+    system("cls");
+        printf("=========Escolheu criar conta no UNITEL MONEY========\n");
+        printf("1 Para abrir a tua conta Unitel Money digite 1 e escolha enviar para prosseguir\n");
+
+        printf("1) Continuar\n");
+        printf("2) Voltar\n");
+        scanf("%d", &submenu1);
+
+
+        if(submenu1 != 2){
+            printf("Mostrando informacao deste submenu");
+        }else{
+            main();
+        }
+        break;
+    
+    default:
+        printf("Opção inexistente");
+        break;
+    }
+}
+
+
+void menuUnitel(int escolha){
+    int outroMenu;
+    escolha = 0;
+
+do{
+    printf("Menu Unitel\n");
+    printf("1) UNITEL money\n");
+    printf("2) Tarif. Voz\n");
+    printf("3) Planos Net\n");
+    printf("4) Planos +\n");
+    printf("5) Redes socias\n");
+    printf("6) Bazza\n");
+    printf("7) Clube de Pontos\n");
+    printf("8) Servicos\n");
+    printf("9) Roaming\n");
+    printf("10) Entretenimento\n");
+    printf("11) Sair\n");
+
+    printf("Digite a sua escolha: ");
+    scanf("%d", &escolha);
+    
+    switch (escolha)
+    {
+    case 1:
+        system("cls");
+        printf("==================UNITEL money Selecionada===================\n");
+        printf("Liga *449# ou ecolhe 1 para activar  a tua conta MONEY p/ transferir e levantar dinheiro e comprar recargas UNITEL. info 949489473.\n");
+
+        printf("1) Continuar\n");
+        printf("2) Voltar\n");
+        scanf("%d", &outroMenu);
+
+        if(outroMenu != 2){
+            subUnitelMoney(outroMenu);
+        }else{
+            escolha = 0;
+            system("cls");
+        }
+        break;
+    case 2:
+        system("cls");
+        printf("Tafif Voz Selecionado\n");
+        printf("1) Fala Mais\n");
+        printf("2) Mais Unitel\n");
+        printf("3) Fala Muito Mais\n");
+        printf("4) Notificacao de chamadas\n");
+        printf("5) Notificacao de disponibilidade\n");
+        printf("6) Voltar\n");
+        scanf("%d", &outroMenu);
+
+        if(outroMenu != 6){
+            printf("Mostrando Menu");
+        }else{
+            escolha = 0;
+            system("cls");
+        }
+        break;
+    case 3:
+        system("cls");
+        printf("Planos Net Selecionado\n");
+        printf("1) Netlight\n");
+        printf("2) Planos de NET Diarios\n");
+        printf("3) Planos de NET Semanais\n");
+        printf("4) Planos de NET Mensais\n");
+        printf("5) Planos de NET Bimestrais\n");
+        printf("6) Planos Sementrais\n");
+        printf("7) Planos anuais\n");
+        printf("8) Voltar\n");
+        scanf("%d", &outroMenu);
+
+        if(outroMenu != 8){
+            printf("Mostrando Menu");
+        }else{
+            escolha = 0;
+            system("cls");
+        }
+        break;
+    case 4:
+        system("cls");
+        printf("Planos + Selecionado\n");
+        printf("1) Plano MAIS 1 dia\n");
+        printf("2) Plano MAIS 3 dias\n");
+        printf("3) Plano MAIS 7 dias\n");
+        printf("4) Plano MAIS 30 dias\n");
+        printf("5) Consultar\n");
+        printf("6) Voltar\n");
+        scanf("%d", &outroMenu);
+
+            if(outroMenu != 6){
+            printf("Mostrando Menu");
+            }else{
+                escolha = 0;
+                system("cls");
+            }
+        break;
+    case 5:
+        system("cls");
+        printf("Redes Socias Selecionado\n");
+        printf("1) Plus 125MB/1 dia, 50KZ\n");
+        printf("2) Plus 250MB/1 dia, 100KZ\n");
+        printf("3) Plus 600MB/3 dias, 200KZ\n");
+        printf("4) Plus 1,5GB/7 dias, 500KZ\n");
+        printf("5) Plus 3GB/30 dias, 1000KZ\n");
+        printf("6) Voltar\n");
+        scanf("%d", &outroMenu);
+
+            if(outroMenu != 6){
+            printf("Mostrando Menu");
+            }else{
+                escolha = 0;
+                system("cls");
+            }
+        break;
+    case 6:
+        system("cls");
+        printf("Bazza Selecionado\n");
+        printf("1)Tarifario\n");
+        printf("2)Consulta\n");
+        printf("3)Tarifario Net\n");
+        printf("4)Voltar\n");
+        scanf("%d", &outroMenu);
+
+            if(outroMenu != 4){
+            printf("Mostrando Menu");
+            }else{
+                escolha = 0;
+                system("cls");
+            }
+        break;
+    case 7:
+        system("cls");
+        printf("Clube de pontos Selecionado\n");
+        printf("1) Activar\n");
+        printf("2) Consultar Pontos\n");
+        printf("3) Trocar Pontos\n");
+        printf("4) Cancelar servico\n");
+        printf("5) Informacao\n");
+        printf("6) Voltar\n");
+        scanf("%d", &outroMenu);
+
+            if(outroMenu != 6){
+                printf("Mostrando Menu");
+            }else{
+                escolha = 0;
+                system("cls");
+            }
+        break;
+    case 8:
+        system("cls");
+        printf("Servicos Selecionado\n");
+        printf("1) Adianta So\n");
+        printf("2) Da So\n");
+        printf("3) Liga So\n");
+        printf("4) Atende So\n");
+        printf("5) Consulta de Saldo\n");
+        printf("6) 10 Amigos\n");
+        printf("7) Fala Tudo\n");
+        printf("8) Navega Tudo\n");
+        printf("9) Consultar Meu Numero\n");
+        printf("10) Voltar\n");
+        scanf("%d", &outroMenu);
+
+            if(outroMenu != 10){
+            printf("Mostrando Menu");
+            }else{
+                escolha = 0;
+                system("cls");
+            }
+        break;
+    case 9:
+        system("cls");
+        printf("Roaming Selecionado");
+        printf("1) Informacao\n");
+        printf("2) Roaming Portugal\n");
+        printf("3) Como Usar\n");
+        printf("4) Voltar\n");
+        scanf("%d", &outroMenu);
+
+            if(outroMenu != 4){
+                printf("Mostrando Menu");
+            }else{
+                escolha = 0;
+                system("cls");
+            }
+        break;
+    case 10:
+        system("cls");
+        printf("Entretenimento Selecionado\n");
+        printf("1) Toque de espera\n");
+        printf("2) Portal Reycreo\n");
+        printf("3) Voltar\n");
+        scanf("%d", &outroMenu);
+
+            if(outroMenu != 3){
+            printf("Mostrando Menu");
+            }else{
+                escolha = 0;
+                system("cls");
+            }
+        break;
+    default:
+        system("cls");
+        printf("Saindo do menu da unitel...\n");
+        break;
+    }
+}while(escolha == 0);
+}
+
+int main(){
+    int escolha;
+
+    menuUnitel(escolha);
+
+    return 0;
+}

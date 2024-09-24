@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularReajusteSalarial(salarioActual, percentualReajuste){
+            const reajuste = salarioActual * percentualReajuste / 100;
+
+            const novoSalario = salarioActual + reajuste;
+
+            return novoSalario
+        }
+
+        var salarioActual = 1000;
+        var percentualReajuste = 5;
+
+        var mostrarNovoSalario = calcularReajusteSalarial(salarioActual, percentualReajuste);
+
+        console.log(`O novo salario é: ${mostrarNovoSalario}Kz`)
+    </script>
+</body>
+</html>

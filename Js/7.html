@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function salaFinalDoVendedor(salarioFixo,carrosVendidos,valorVendaCarro, comissaoVenda){
+            const comissaoFixa = carrosVendidos * valorVendaCarro; 
+            
+            const comissaoTotal = comissaoFixa + (comissaoVenda * valorVendaCarro);
+
+            const salarioFinal = salarioFixo + comissaoTotal;
+
+            return salarioFinal;
+        }
+
+        var salarioFixo = 1000.0;
+        var carrosVendidos = 10;
+        var valorVendaCarro = 50000.0;
+        var comissaoVenda = 0.05;
+
+        var salaFinal = salaFinalDoVendedor(salarioFixo,carrosVendidos,valorVendaCarro, comissaoVenda);
+
+        console.log(`O salario final do vendedor é: ${salaFinal.toFixed(2)}Kz`);
+    </script>
+</body>
+</html>
